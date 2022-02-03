@@ -29,7 +29,7 @@ export const entityStateDisplay = (hass, stateObj, config) => {
         return hass.localize(`state.default.${stateObj.state}`);
     }
 
-    let value = config.attribute ? stateObj.attributes[config.attribute] : stateObj.state;
+    let  value = 0 //value = config.attribute ? stateObj.attributes[config.attribute] : stateObj.state;
     let unit =
         config.unit === false
             ? undefined
