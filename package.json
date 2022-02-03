@@ -12,8 +12,8 @@
     "row"
   ],
   "module": "multiple-entity-row.js",
-  "repository": "https://github.com/benct/lovelace-multiple-entity-row.git",
-  "author": "benct <ben@tomlin.no>",
+  "repository": "https://github.com/Scags104/lovelace-multiple-entity-row.git",
+  "author": "Scags104",
   "license": "MIT",
   "dependencies": {
     "custom-card-helpers": "^1.8.0",
