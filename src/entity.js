@@ -39,9 +39,13 @@ export const entityStateDisplay = (hass, stateObj, config) => {
 
     if (config.format) {
         if (isNaN(parseFloat(value)) || !isFinite(value)) {
-            value = 0
+            value = 0;
+            unit = '%';
         } else if (config.format === 'brightness') {
             value = Math.round((value / 255) * 100);
+            if (value === 'undefined'){
+                 value = 0;
+            }
             unit = '%';
         } else if (config.format.startsWith('duration')) {
             value = secondsToDuration(config.format === 'duration-m' ? value / 1000 : value);
