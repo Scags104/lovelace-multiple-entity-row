@@ -16,7 +16,7 @@ export const numberFormatToLocale = (localeOptions) => {
         case NumberFormat.space_comma:
             return ['fr', 'sv', 'cs']; // Use French with fallback to Swedish and Czech formatting 1 234 567,89
         case NumberFormat.system:
-            return undefined;
+            return 'off';
         default:
             return localeOptions.language;
     }
