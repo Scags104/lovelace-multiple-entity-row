@@ -43,7 +43,7 @@ export const entityStateDisplay = (hass, stateObj, config) => {
             unit = '%';
         } else if (config.format === 'brightness') {
             value = Math.round((value / 255) * 100);
-            if (value === 'NaN'){
+            if (isNaN(value)){
                  value = 0;
             }
             unit = '%';
