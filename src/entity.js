@@ -39,7 +39,7 @@ export const entityStateDisplay = (hass, stateObj, config) => {
 
     if (config.format) {
         if (isNaN(parseFloat(value)) || !isFinite(value)) {
-            // do nothing if not a number
+            value = 0
         } else if (config.format === 'brightness') {
             value = Math.round((value / 255) * 100);
             unit = '%';
