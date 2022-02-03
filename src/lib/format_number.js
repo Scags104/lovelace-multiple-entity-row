@@ -23,7 +23,7 @@ export const numberFormatToLocale = (localeOptions) => {
 };
 
 export const formatNumber = (num, localeOptions, options) => {
-    const locale = localeOptions ? numberFormatToLocale(localeOptions) : undefined;
+    const locale = localeOptions ? numberFormatToLocale(localeOptions) : 'off';
 
     // Polyfill for Number.isNaN, which is more reliable than the global isNaN()
    // Number.isNaN =
